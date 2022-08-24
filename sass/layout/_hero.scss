@@ -1,0 +1,30 @@
+.hero {
+    background-color: #2F303A;
+    &-title-container {
+        text-align: center;
+        width: 696px;
+        margin: 0 auto;
+    }
+
+        &__title {
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+        &__button:hover,
+        &__button:focus {
+            background-color: #188CE8;
+        }
+    }
+
+    .hero__button {
+   @extend %hero__button;}
+
+
+

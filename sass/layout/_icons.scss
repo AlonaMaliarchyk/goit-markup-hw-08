@@ -1,0 +1,50 @@
+.icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+
+.team__icon-list {
+        display: flex;
+        margin-top: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        .icon>li:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        ;
+    }
+.team__icon-social {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+    .team__icon-social:hover,
+    .team__icon-social:focus {
+        background-color: var(--accent-color);
+        border-radius: 50%;
+    };
+
+        .team__icon-social:hover svg,
+        .team__icon-social:focus svg {
+        fill: #FFFFFF;
+    }
+
+        .customers__icon {
+            fill: #AFB1B8;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+        }

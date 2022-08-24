@@ -1,0 +1,36 @@
+.section-padding {
+    padding-top: var(--section-padding-gap);
+}
+
+.portfolio__filtr-btn {
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 6px 22px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+                background-color: var(--accent-color);
+                color: var(--white);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            };
+}
+
+.portfolio-btn {
+    margin-bottom: 50px;
+}
+
+.portfolio__padding-btn {
+    padding: 20px 24px;
+}

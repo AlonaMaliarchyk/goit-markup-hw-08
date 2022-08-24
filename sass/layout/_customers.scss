@@ -1,0 +1,11 @@
+.customers {
+    padding-top: var(--section-padding-gap);
+    padding-bottom: var(--section-padding-gap);
+}
+
+
+
+.customers__list>li:not(:last-child) {
+    margin-right: 30px;
+}
+

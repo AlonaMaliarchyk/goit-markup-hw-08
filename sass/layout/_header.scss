@@ -1,0 +1,109 @@
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+        & a:hover,
+        & a:focus {
+            color: var(--accent-color);
+        };
+        &.link.current {
+            color: var(--accent-color);
+        }
+
+}
+
+site-nav__link  {
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+} 
+
+.current {
+    position: relative;
+    &::after {
+    position: absolute;
+    content: '';
+    background-color: rgba(33, 150, 243, 1);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -33px;
+}
+}
+
+.header-contact__contact {
+    color: var(--secendery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:not(:last-child) {
+            margin-right: var(--header-items-gap);
+        }
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        };
+    &:not(:last-child) {
+    margin-right: var(--header-items-gap)
+}
+    };
+
+.header-contact__icon {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+/*-------page-heder------*/
+.page-heder {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.header,
+.header-logo-nav-container,
+.header-logo,
+.site-nav,
+.site-nav__item,
+.header-contact,
+.header-contact__contact {
+    display: flex;
+}
+
+.header-logo-nav-container {
+    flex-basis: 45%;
+    align-items: center;
+}
+
+.header-nav-container {
+    margin-left: auto;
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: var(--header-items-gap);
+}
+
+.header-contact {
+    margin-left: auto;
+}
