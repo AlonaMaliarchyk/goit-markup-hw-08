@@ -1,20 +1,10 @@
-
 .team,
 .work {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.13;
     letter-spacing: 0.03em;
     padding: 0;
-}
-
-.team .title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
 }
 
 .team__title {
@@ -36,7 +26,7 @@
 
 .team__padding {
     padding-top: var(--team-padding-gap);
-    padding-bottom: var(--team-padding-gap);
+    padding-bottom: 24px;
 }
 
 .team .text {
@@ -58,12 +48,21 @@
 }
 
 .team__card-seat>.team__item {
-    flex-basis: calc(100% / 4 - var(--card-item-gap));
-    margin-left: var(--card-item-gap);
+    // flex-basis: calc(100% / 4 - var(--card-item-gap));
+    width: 100%;
+    margin-left: 30px;
     margin-top: var(--card-item-gap);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 60px) /2);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 120px) /4);
+    }
 }
 
 .team .list>.page-work {
@@ -77,18 +76,18 @@
 
 .team__icon {
     fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__icon-list {
-        display: flex;
-        margin-top: 16px;
-        padding-left: 32px;
-        padding-right: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-top: 16px;
+    // padding-left: 32px;
+    // padding-right: 32px;
 
-        >li:not(:first-child) {
-            margin-left: 10px;
-        }
-
-        ;
+    .icon>li:not(:first-child) {
+        margin-left: 10px;
     }
+}

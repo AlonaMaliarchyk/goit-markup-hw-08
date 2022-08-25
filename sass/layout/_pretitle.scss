@@ -12,10 +12,11 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+
     & {
-    color: var(--primery-text-color);
-    margin-bottom: var(--title-margin-bottom)
-}
+        color: var(--primery-text-color);
+        margin-bottom: 30px;
+    }
 }
 
 .customers__pretitle {
@@ -29,6 +30,6 @@
 
     & {
         color: var(--primery-text-color);
-        margin-bottom: var(--title-margin-bottom)
+        margin-bottom: var(--title-margin-bottom);
     }
 }
