@@ -347,15 +347,9 @@ site-nav__link:hover, site-nav__link:focus {
   margin-left: var(--card-item-gap);
   margin-top: var(--card-item-gap);
 }
-@media screen and (min-width: 480px) {
-  .card-set > .benefit__item {
-    padding-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .card-set > .benefit__item {
     width: calc((100% - 60px) / 2);
-    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -464,7 +458,7 @@ site-nav__link:hover, site-nav__link:focus {
 
 .team__card-seat > .team__item {
   width: 100%;
-  margin-left: 30px;
+  margin-left: 15px;
   margin-top: var(--card-item-gap);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -724,11 +718,8 @@ site-nav__link:hover, site-nav__link:focus {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 480px) {
-  .section-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section-padding {
+  padding-top: var(--section-padding-gap);
 }
 @media screen and (min-width: 768px) {
   .section-padding {
