@@ -1,9 +1,27 @@
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.customers__block{
+    width: 100%;
+        @media screen and (min-width:468px) {
+            width: calc((100% - 60px) /2);
+        }
+    
+        @media screen and (min-width:768px) {
+            width: calc((100% - 90px) /3);
+        }
+
+        @media screen and (min-width:1200px) {
+            width: calc((100% - 180px) /6);
+        }
 }
 
 .customers-icons {
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     background-position: center;
