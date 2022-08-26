@@ -1,6 +1,13 @@
 .customers {
-    padding-top: var(--section-padding-gap);
-    padding-bottom: var(--section-padding-gap);
+        @include tablet {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @include desktop {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 

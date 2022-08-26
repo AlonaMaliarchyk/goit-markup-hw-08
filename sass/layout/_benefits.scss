@@ -9,6 +9,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 10px;
+        @media screen and (max-width:479px) {
+                text-align: center;
+            }
+        
     }
 
     &__text {

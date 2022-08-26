@@ -6,23 +6,19 @@
 
 .customers__block{
     width: 100%;
-        @media screen and (min-width:468px) {
+        @include mobile {
             width: calc((100% - 60px) /2);
         }
     
-        @media screen and (min-width:768px) {
+        @include tablet {
             width: calc((100% - 90px) /3);
         }
 
-        @media screen and (min-width:1200px) {
+        @include desktop{
             width: calc((100% - 180px) /6);
         }
-        @media screen and (min-width:468px) {
-            margin-right: 30px;
-            margin-bottom: 30px;
-        }
     
-        @media screen and (min-width:768px) {
+        @include tablet {
             margin-right: 30px;
             margin-bottom: 30px;
         }

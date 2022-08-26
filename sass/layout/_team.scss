@@ -71,8 +71,16 @@
 
 .page-team {
     background-color: #F5F4FA;
-    padding-bottom: 94px;
-}
+    @include tablet {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @include desktop {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    }
 
 .team__icon {
     fill: #AFB1B8;
@@ -88,6 +96,5 @@
     // padding-right: 32px;
 
     .icon>li:not(:first-child) {
-        margin-left: 10px;
-    }
+        margin-left: 10px; }
 }
