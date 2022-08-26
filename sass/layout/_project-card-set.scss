@@ -26,7 +26,15 @@
     margin-left: calc(-1 * var(--card-item-gap));
     margin-top: calc(-1 * var(--card-item-gap));
     & .portfolio-card__list {
-            flex-basis: calc(100% / 3 - var(--card-item-gap));
+            // flex-basis: calc(100% / 3 - var(--card-item-gap));
+            @media screen and (min-width:768px) {
+                    width: calc((100% - 60px) /2);
+                }
+            
+                @media screen and (min-width:1200px) {
+                    width: calc((100% - 90px) /3);
+                }
+            width: 100%;
             margin-left: var(--card-item-gap);
             margin-top: var(--card-item-gap);
             border: 1px solid #EEEEEE;
