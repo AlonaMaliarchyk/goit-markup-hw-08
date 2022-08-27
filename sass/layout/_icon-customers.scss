@@ -2,26 +2,31 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 }
 
 .customers__block{
-    width: 100%;
-        @include mobile {
-            width: calc((100% - 60px) /2);
-        }
-    
+    width: 100%;    
+        width: calc((100% - 90px) / 2);
+
         @include tablet {
-            width: calc((100% - 90px) /3);
+            width: calc((100% - 90px) / 3);
         }
 
         @include desktop{
-            width: calc((100% - 180px) /6);
+            width: calc((100% - 180px) / 6);
         }
     
-        @include tablet {
-            margin-right: 30px;
-            margin-bottom: 30px;
-        }
+        // @include tablet {
+        //     margin-bottom: 30px;
+        // }
+}
+.customers__block:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.customers__block:nth-child(-n+4) {
+    margin-bottom: 30px;
 }
 
 .customers-icons {

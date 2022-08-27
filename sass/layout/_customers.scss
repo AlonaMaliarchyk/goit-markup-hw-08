@@ -1,8 +1,6 @@
 .customers {
-        @include tablet {
             padding-top: 60px;
             padding-bottom: 60px;
-        }
     
         @include desktop {
             padding-top: 94px;
@@ -12,6 +10,8 @@
 
 
 
-.customers__list>li:not(:last-child) {
-    margin-right: 30px;
-        }
+// .customers__list>li:not(:last-child) {
+//     @include desktop{
+//     margin-right: 30px;
+//     margin-bottom: 30px;}
+//         }
