@@ -2,29 +2,55 @@
     background-color: #2F303A;
     &-title-container {
         text-align: center;
-        width: 696px;
-        margin: 0 auto;
-    }
+        width: 100%;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        padding-left: 60px;
+        padding-right: 60px;
+        @media screen and(max-width:479px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
-        &__title {
+        @include  desktop {
+            padding-left: 204px;
+            padding-right: 204px;
+        }
+    }
+    &__title {
         color: #FFFFFF;
         font-weight: 900;
-        font-size: 44px;
+        font-size: 20px;
         line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-bottom: 30px;
-    }
-
-        &__button:hover,
-        &__button:focus {
-            background-color: #188CE8;
+        @include tablet {
+            font-size: 35px;
+        }
+        
+        @include desktop {
+            font-size: 44px;
         }
     }
 
-    .hero__button {
-   @extend %hero__button;}
+    &__button:hover,
+    &__button:focus {
+        background-color: #188CE8;
+    }
+}
+        
+.hero__container {
+    width: 100%;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-
-
+.hero__button {
+    @extend %hero__button;
+    @include desktop {
+        min-width: 216px;
+    }
+}
