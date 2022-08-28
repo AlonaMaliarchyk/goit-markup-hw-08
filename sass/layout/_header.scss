@@ -13,7 +13,7 @@
 
 }
 
-site-nav__link  {
+.site-nav__link  {
     color: #212121;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
@@ -68,6 +68,25 @@ site-nav__link  {
         }
 }
 
+.menu-open{
+    background-color: transparent;
+    border: transparent;
+    margin-left: auto;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-close{
+    background-color: transparent;
+        border: transparent;
+        margin-left: auto;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+}
+
 /*-------page-heder------*/
 .page-heder {
     padding-top: 24px;
@@ -81,14 +100,24 @@ site-nav__link  {
     
 }
 
-.header,
+.header {
+    display: flex;
+}
+
 .header-logo-nav-container,
-.header-logo,
+.header-logo {
+    display: flex;
+}
+
 .site-nav,
-.site-nav__item,
+.site-nav__item {
+    display: none;
+}
+
+
 .header-contact,
 .header-contact__contact {
-    display: flex;
+    display: none;
 }
 
 .header-logo-nav-container {
@@ -107,3 +136,38 @@ site-nav__link  {
 .header-contact {
     margin-left: auto;
 }
+
+.mob-menu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+}
+
+.menu-close {}
+
+.heder__menu-close {}
+
+.mob-menu__nav {}
+
+.mob-menu__item {}
+
+.mob-menu__link {}
+
+.mob-nav__link {}
+
+.mob-conect {}
+
+.mob-conect__email {}
+
+.mob-conect__contact {}
+
+.mob-social {}
+
+.mob-social__list {}
+
+.mob-social__link {}
+
+.mob-social__item {}
+
