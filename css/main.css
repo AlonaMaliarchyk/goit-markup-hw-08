@@ -195,25 +195,6 @@ img {
   color: var(--accent-color);
 }
 
-.menu-open {
-  background-color: transparent;
-  border: transparent;
-  margin-left: auto;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-}
-
-.menu-close {
-  background-color: transparent;
-  border: transparent;
-  margin-left: auto;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-}
-
 /*-------page-heder------*/
 .page-heder {
   padding-top: 24px;
@@ -260,6 +241,62 @@ img {
 
 .header-contact {
   margin-left: auto;
+}
+
+.mob-menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: greenyellow;
+  top: 0;
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-open {
+  background-color: transparent;
+  border: transparent;
+  margin-left: auto;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-close {
+  background-color: transparent;
+  border: transparent;
+  margin-left: auto;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mob-conect {
+  margin-bottom: 64px;
+}
+
+.mob-conect__contact {
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.mob-social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.mob-social__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .hero {
