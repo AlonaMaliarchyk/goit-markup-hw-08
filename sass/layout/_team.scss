@@ -51,15 +51,16 @@
 .team__card-seat>.team__item {
     // flex-basis: calc(100% / 4 - var(--card-item-gap));
     width: 100%;
-    margin-left: 15px;
-    margin-bottom: var(--card-item-gap);
+    margin-left: var(--card-item-gap);
+    margin-top: var(--card-item-gap);
+    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         width: calc((100% - 60px) / 2);
-        .customers__block:nth-child(even) {
+    .customers__block:nth-child(even) {
                 margin-left: 30px;
             }
         
@@ -68,9 +69,9 @@
             }
     }
 
-    @media screen and (min-width:1200px) {
+    @include desktop {
         width: calc((100% - 120px) / 4);
-        .team__item:not(:last-child){
+    .team__item:not(:last-child){
         margin-right: 30px;}
     }
 }
@@ -80,7 +81,7 @@
 }
 
 .page-team {
-    background-color:blue;
+    background-color:#F5F4FA;;
     @include tablet {
             padding-top: 60px;
             padding-bottom: 60px;

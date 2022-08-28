@@ -541,8 +541,8 @@ site-nav__link:hover, site-nav__link:focus {
 
 .team__card-seat > .team__item {
   width: 100%;
-  margin-left: 15px;
-  margin-bottom: var(--card-item-gap);
+  margin-left: var(--card-item-gap);
+  margin-top: var(--card-item-gap);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #FFFFFF;
@@ -572,7 +572,7 @@ site-nav__link:hover, site-nav__link:focus {
 }
 
 .page-team {
-  background-color: blue;
+  background-color: #F5F4FA;
 }
 @media screen and (min-width: 768px) {
   .page-team {
