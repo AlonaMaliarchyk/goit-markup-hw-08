@@ -117,25 +117,37 @@
 .header-contact {
     margin-left: auto;
 }
-.mob-menu{
+.mob-menu {
     position: fixed;
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: #FFFFFF;
     top: 0;
     left: 0;
-    padding-left: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 40px;
+    // padding-left: 40px;
+    // padding-top: 48px;
+    // padding-bottom: 48px;
 }
 
-.container-menu {
+.container-menu { 
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
+    gap: 308px;
+}
 
+
+.mob-menu__top {
+    display: flex;
+}
+
+.mob-menu__bottom {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -153,48 +165,35 @@
 }
 
 .menu-close {
-    display: block;
-    margin-left: auto;
+    position: absolute;
+    top: 1px;
+    right: 3px;
     background-color: transparent;
     border: transparent;
     padding: 0;
     width: 40px;
-    height: 40px;
-    top: 0;
+    height: 40px;;
     margin-bottom: 8px;
 }
 
-.menu-close {}
-
-.heder__menu-close {}
-
-.mob-menu__nav {
-    
-}
-
-.mob-menu__item {}
 
 .mob-menu__link {
     font-style: normal;
         font-weight: 500;
-        font-size: 40px;
+        // font-size: 40px;
+        font-size: 30px;
         line-height: 1.17;
         letter-spacing: 0.02em;
         color: #212121;
 }
 
-.mob-nav__link {}
-
-.mob-menu__bottom{
-
-}
 .mob-conect {
     margin-bottom: 64px;
     // margin-bottom: 32px;
 }
 
 .mob-conect__email {
-    display: block;
+    display: flex;
     margin-top: 32px;
     font-weight: 500;
         font-size: 24px;
@@ -205,24 +204,27 @@
 
 .mob-conect__contact {
 font-weight: 500;
-    font-size: 34px;
+    // font-size: 34px;
+    font-size: 23px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196F3;
 }
 
 .mob-social {
-
+    display: flex;
+    justify-content: center;
 }
 
 .mob-social__list { 
     display: flex;
-justify-content: center;
+
 }
 
 .mob-social__link {
     font-weight: 500;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 15px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
@@ -234,5 +236,4 @@ justify-content: center;
     margin-right: 10px;
     }
 
-.mob-social__item {}
 
