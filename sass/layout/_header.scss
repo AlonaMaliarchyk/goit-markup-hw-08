@@ -24,16 +24,40 @@
 
 .current {
     position: relative;
-    &::after {
-    position: absolute;
-    content: '';
-    background-color: rgba(33, 150, 243, 1);
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: -33px;
+        @media screen and (max-width:767px){
+            color: var(--accent-color) !important;
+        }
+    @media screen and (min-width:768px){
+        &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(33, 150, 243, 1);
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: -33px;
+        }
+    }
 }
+
+.header-nav-container {
+    color: var(--secendery-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.42;
+        letter-spacing: 0.02em;
+        align-items: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:not(:last-child) {
+            margin-right: var(--header-items-gap);
+        }
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .header-contact__contact {
@@ -44,17 +68,18 @@
     letter-spacing: 0.02em;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:not(:last-child) {
-            margin-right: var(--header-items-gap);
-        }
+    // &:not(:last-child) {
+    //         margin-right: var(--header-items-gap);
+    //     }
     &:hover,
     &:focus {
             color: var(--accent-color);
         };
-    &:not(:last-child) {
-    margin-right: var(--header-items-gap)
 }
-    };
+
+.header-nav__container{
+    display: flex;
+}
 
 .header-contact__icon {
     width: 16px;
@@ -75,11 +100,6 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.header {
-    align-items: center;
-    justify-content: space-around;
-    
-}
 .is-hidden{
     display: none;
 
@@ -87,10 +107,9 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
-    @media screen and (min-width:768px) {
-            display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width:768px) and (max-width:1200px) {
             justify-content: space-between;
             flex-grow: 1;
         }
@@ -101,37 +120,36 @@
     display: flex;
 }
 
+
+.site-nav__item,
 .site-nav,
-.site-nav__item {
-    @media screen and (min-width:768px) {
-            display: flex;
-        
-        }
-}
-
 .header-contact__contact,
-.header-contact {
-    @media screen and (min-width:768px) {
-            display: flex;
-        }
+.header-nav-container {
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
 }
 
 .header-logo-nav-container {
-    flex-basis: 45%;
-    align-items: center;
+    @include desktop{
+        flex-basis: 20%;
+    }  
 }
+    
 
-.header-nav-container {
-    margin-left: auto;
-}
 
 .site-nav__item:not(:last-child) {
     margin-right: var(--header-items-gap);
 }
 
-.header-contact {
-    margin-left: auto;
+.header-contact__container {
+    @include desktop{
+        margin-left: auto;
+    }
 }
 .mob-menu {
     position: fixed;
@@ -179,7 +197,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 10;
+    top: 10px;
     right: 10px;
     @media screen and (min-width:768px) {
             display: none;
@@ -201,12 +219,15 @@
 
 .mob-menu__link {
     font-style: normal;
-        font-weight: 500;
-        // font-size: 40px;
-        font-size: 30px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: #212121;
+    font-weight: 500;
+    // font-size: 40px;
+    font-size: 30px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+    &.link.current {
+        color: var(--accent-color);
+    }
 }
 
 .mob-conect {
@@ -257,9 +278,3 @@ font-weight: 500;
     padding-right: 10px;
     margin-right: 10px;
     }     
-    
-    .menu-tablet{
-        @media screen and (min-width:768px) and (max-width:1200px)  {
-                justify-content: space-between;;
-            }
-    }
