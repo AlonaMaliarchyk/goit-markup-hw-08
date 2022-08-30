@@ -147,8 +147,13 @@
 }
 
 .header-contact__container {
+    @include tablet{
+        display: block;
+
+    }
     @include desktop{
         margin-left: auto;
+        display: flex;
     }
 }
 .mob-menu {

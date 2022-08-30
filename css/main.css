@@ -273,9 +273,15 @@ img {
   margin-right: var(--header-items-gap);
 }
 
+@media screen and (min-width: 768px) {
+  .header-contact__container {
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-contact__container {
     margin-left: auto;
+    display: flex;
   }
 }
 
