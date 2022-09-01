@@ -1174,7 +1174,6 @@ img {
 }
 
 .modal {
-  width: 100%;
   border-radius: 4px;
   background-color: #FFFFFF;
   position: absolute;
@@ -1184,9 +1183,24 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
-    min-width: 528px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 .modal .backdrop.is-hidden {
@@ -1223,9 +1237,13 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 355px) {
+  .modal__form-info {
+    font-size: 16px;
+  }
+}
 
 textarea {
-  width: 448px;
   height: 120px;
   outline: none;
   resize: none;
@@ -1241,7 +1259,7 @@ textarea {
 @media screen and (max-width: 767px) {
   textarea {
     min-width: 0;
-    width: 70vw;
+    width: 100%;
   }
 }
 textarea:focus {
@@ -1274,7 +1292,7 @@ textarea::placeholder {
 }
 
 .modal__class-input {
-  min-width: 448px;
+  width: 100%;
   min-height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1282,11 +1300,6 @@ textarea::placeholder {
   font-size: 20px;
   padding-left: 35px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (max-width: 768px) {
-  .modal__class-input {
-    min-width: 100%;
-  }
 }
 .modal__class-input:focus {
   outline: none;
@@ -1312,7 +1325,6 @@ textarea::placeholder {
 .modal__policy {
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1321,6 +1333,17 @@ textarea::placeholder {
 .modal__chack-text {
   display: flex;
   align-items: center;
+  font-size: 14px;
+}
+@media screen and (max-width: 479px) {
+  .modal__chack-text {
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal__chack-text {
+    font-size: 11px;
+  }
 }
 
 .modal__chack-text span {
