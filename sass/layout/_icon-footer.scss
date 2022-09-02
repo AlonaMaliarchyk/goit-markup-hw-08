@@ -1,5 +1,8 @@
 .footer__icon-join {
     display: flex;
+    @media screen and (max-width:767px){
+    justify-content: center;
+}
 }
 
 .icon__footer {
