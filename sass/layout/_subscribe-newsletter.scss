@@ -2,6 +2,12 @@
     padding-top: 12px;
     color: var(--white);
     font-size: 16px;
+    display: block;
+    @include tablet{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
     @include desktop{
         margin-left: 93px
     }
@@ -17,6 +23,9 @@
     margin-bottom: 20px;
     @media screen and (max-width:767px){
         text-align: center;
+    }
+    @include tablet{
+            text-align: center;
     }
 }
 

@@ -86,12 +86,25 @@
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    
     &>.portfolio-btn__item:not(:last-child) {
-    margin-right: var(--portfolio-filter-btn-gap);
-}
-}
+        @media screen and (min-width: 767px) {
+            margin-right: var(--portfolio-filter-btn-gap);
+        }
+    }
 
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 8px;
+        width: 326px;
+    }
+
+    @media screen and (min-width: 767px) {
+        justify-content: center;
+    }
+}
 
 
 .bottom {

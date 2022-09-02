@@ -16,6 +16,9 @@
 
 &__logo-container {
     margin-bottom: 20px;
+    @media screen and (max-width:767px) {
+            text-align: center;
+        }
 };
 
 &__color {
@@ -31,6 +34,11 @@
         }
 };
 }
+.footer-logo-contacts-container{
+    @include tablet{
+        padding-left: 76px;
+    }
+}
 
 .footer__contacts-address {
     font-style: normal;
@@ -45,6 +53,9 @@
 .footer__contact {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width:767px) {
+            text-align: center;
+        }
     >li:not(:last-child) {
             margin-bottom: 9px;
         }
@@ -81,7 +92,9 @@
         margin-left: 70px;
     }
         @media screen and (max-width:767px) {
-            margin-bottom: 60px;;
+            margin-bottom: 60px;
+                margin-left: auto;
+                margin-right: auto;
         }
 }
 
@@ -92,7 +105,10 @@
 .footer-info-container {
     display: flex;
     @media screen and (max-width:767px){
+        display: block;
+    }
+    @include tablet{
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
