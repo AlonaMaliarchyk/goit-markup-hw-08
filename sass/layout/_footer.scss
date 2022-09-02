@@ -34,6 +34,12 @@
 
 .footer__contacts-address {
     font-style: normal;
+    @include mobile{
+        margin-bottom: 60px;
+    }
+        @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+        }
 }
 
 .footer__contact {
@@ -62,13 +68,21 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+@media screen and (max-width:767px){
+        text-align: center;
+    }
 }
 
 .footer__social-join {
     width: 206px;
     height: 80px;
-    margin-left: 70px;
     margin-top: 12px;
+    @include desktop{
+        margin-left: 70px;
+    }
+        @media screen and (max-width:767px) {
+            margin-bottom: 60px;;
+        }
 }
 
 .footer__icon-join>li:not(:last-child) {
@@ -77,4 +91,8 @@
 
 .footer-info-container {
     display: flex;
+    @media screen and (max-width:767px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
