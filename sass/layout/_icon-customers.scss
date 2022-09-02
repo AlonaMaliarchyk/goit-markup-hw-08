@@ -3,30 +3,20 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
-.customers__block{
-    width: 100%;    
-        width: calc((100% - 90px) / 2);
+.customers__block{ 
+    width: calc((100% - 30px) / 2);
 
-        @include tablet {
-            width: calc((100% - 90px) / 3);
-        }
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
 
-        @include desktop{
-            width: calc((100% - 180px) / 6);
-        }
-    
-        // @include tablet {
-        //     margin-bottom: 30px;
-        // }
-}
-.customers__block:nth-child(odd) {
-    margin-right: 30px;
-}
-
-.customers__block:nth-child(-n+4) {
-    margin-bottom: 30px;
+    @include desktop{
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .customers-icons {
