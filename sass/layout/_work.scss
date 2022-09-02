@@ -6,6 +6,9 @@
 
 .page-work {
     padding-bottom: var(--section-padding-gap);
+    @media screen and (max-width:1199px){
+        display: none;
+    }
 
 }
 
