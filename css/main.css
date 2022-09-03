@@ -237,6 +237,7 @@ img {
 
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -319,7 +320,6 @@ img {
 }
 
 .mob-menu__bottom {
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
