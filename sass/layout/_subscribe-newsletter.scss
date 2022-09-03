@@ -3,13 +3,16 @@
     color: var(--white);
     font-size: 16px;
     display: block;
-    @include tablet{
+
+    @media screen and (min-width:767px) and (max-width:1199px) {
         display: block;
         margin-right: auto;
         margin-left: auto;
     }
-    @include desktop{
-        margin-left: 93px
+    
+    @include desktop {
+        //margin-left: 93px;
+        width: 560px
     }
 }
 
@@ -21,19 +24,18 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    @media screen and (max-width:767px){
+
+    @media screen and (max-width:1199px) {
         text-align: center;
-    }
-    @include tablet{
-            text-align: center;
     }
 }
 
 .subscribe-newsletter__form {
     display: flex;
-    @media screen and (max-width:767px){
-        flex-wrap: wrap;
-        justify-content: center;
+    justify-content: center;
+
+    @media screen and (max-width:1199px) {
+        flex-flow: row wrap;
     }
 }
 
@@ -47,31 +49,40 @@
     color: var(--white);
     font-size: 20px;
     padding-left: 20px;
-    @include mobile{
+
+    @include mobile {
         width: 100%;
     }
-        @media screen and (max-width:767px) {
-            margin-bottom: 20px;
-        }
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width:767px) and (max-width:1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .subscribe-newsletter__btn{
     background-color: var(--accent-color);
-    margin-left: 12px;
     outline: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
+
     @extend %hero__button;
     &:hover,
     &:focus {
-    background-color: #188CE8;
-};
+        background-color: #188CE8;
+    };
+
+    @media screen and (min-width:1200px) {
+        margin-left: 12px;
+    }
 }
 
 .subscribe-newsletter__icon{
     fill: var(--white);
     margin-left: 10px;
-
 }

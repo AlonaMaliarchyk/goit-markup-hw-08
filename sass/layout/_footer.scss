@@ -34,9 +34,10 @@
         }
 };
 }
-.footer-logo-contacts-container{
-    @include tablet{
-        padding-left: 76px;
+
+.footer-logo-contacts-container {
+    @media screen and (max-width:1199px) {
+        text-align: center;
     }
 }
 
@@ -45,9 +46,10 @@
     @include mobile{
         margin-bottom: 60px;
     }
-        @media screen and (max-width:767px) {
+
+    @media screen and (max-width:767px) {
         margin-bottom: 60px;
-        }
+    }
 }
 
 .footer__contact {
@@ -80,10 +82,7 @@
     color: #FFFFFF;
     margin-bottom: 20px;
 
-    @media screen and (max-width:767px){
-        text-align: center;
-    }
-    @include tablet{
+    @media screen and (max-width:1199px){
         text-align: center;
     }
 }
@@ -93,7 +92,7 @@
     margin-top: 12px;
     
     @include desktop{
-        margin-left: 70px;
+        //margin-left: 70px;
         width: 206px;
     }
 
@@ -101,10 +100,6 @@
         margin-bottom: 60px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    @include tablet{
-        padding-right: 89px;
     }
 }
 
