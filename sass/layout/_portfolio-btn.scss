@@ -1,17 +1,28 @@
-.section-padding {
-        padding-top: 60px;
-        padding-bottom: 60px;
+// .section-padding {
+//         padding-top: 60px;
+//         padding-bottom: 60px;
 
-    @include desktop {
+//     @include desktop {
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+//     }
+// }
+
+main > section{
+    @media screen and (max-width:1199px){
+        padding-top: 60px;
+        padding-bottom: 60px;}
+    @media screen and (min-width:1200px){
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+main>section:nth-child(2){
+    @media screen and (min-width:1200px){
         padding-top: 94px;
-        padding-bottom: 94px;
+        padding-bottom: 0;
     }
 }
-
-// main > section:not(:nth-child(2)) {
-//     padding-bottom: 0px;
-//     background-color: aqua;
-// }
 
 .portfolio__filtr-btn {
     background-color: #F5F4FA;

@@ -156,11 +156,7 @@ img {
 
 .current {
   position: relative;
-}
-@media screen and (max-width: 767px) {
-  .current {
-    color: var(--accent-color) !important;
-  }
+  color: var(--accent-color) !important;
 }
 @media screen and (min-width: 768px) {
   .current::after {
@@ -406,6 +402,11 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .mob-social__link {
+    font-size: 18px;
+  }
 }
 
 .mob-social__link:not(:last-child) {
@@ -938,11 +939,6 @@ img {
 .footer__contacts-address {
   font-style: normal;
 }
-@media screen and (min-width: 480px) {
-  .footer__contacts-address {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (max-width: 767px) {
   .footer__contacts-address {
     margin-bottom: 60px;
@@ -950,6 +946,9 @@ img {
 }
 
 .footer__contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1143,14 +1142,23 @@ img {
   margin-left: 10px;
 }
 
-.section-padding {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  main > section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .section-padding {
+  main > section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main > section:nth-child(2) {
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1212,6 +1220,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .portfolio-card__list:hover,
