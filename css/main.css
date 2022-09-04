@@ -1143,20 +1143,20 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  main > section {
+  main .section-padding {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  main > section {
+  main .section-padding {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  main > section:nth-child(2) {
+  main .section-padding:nth-child(2) {
     padding-top: 94px;
     padding-bottom: 0;
   }
